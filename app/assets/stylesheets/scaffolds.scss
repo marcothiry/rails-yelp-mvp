@@ -55,4 +55,25 @@ td {
 }
 
 
+.top {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 20px 50px;
+}
 
+.top #info {
+  display: flex;
+  width: 500px;
+  flex-shrink: 0;
+
+
+}
+
+.top #review{
+  display: flex;
+  width: 500px;
+  flex-grow: 0;
+
+}

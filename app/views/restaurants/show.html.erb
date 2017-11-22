@@ -24,3 +24,24 @@
 <%= link_to 'Back', restaurants_path %>
 
 <%= link_to 'Add review', new_restaurant_review_path(@restaurant), class: "btn btn-primary" %>
+<table>
+  <thead >
+    <tr>
+      <th>Rating</th>
+      <th>Comment</th>
+
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reviews.each do |review| %>
+      <tr>
+        <td><%= review.rating %></td>
+        <td><%= review.content %></td>
+
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+

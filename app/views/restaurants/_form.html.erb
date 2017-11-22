@@ -5,7 +5,8 @@
     <%= f.input :name %>
     <%= f.input :address %>
     <%= f.input :phone_number %>
-    <%= f.input :category %>
+
+    <%= f.select :category, options_for_select(["chinese",  "italian", "japanese", "french", "belgian"]), {}, class: "form-control"%>
   </div>
 
   <div class="form-actions">

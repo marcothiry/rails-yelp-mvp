@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 <div class="top">
-  <div class="col-sm-6">
+  <div class="col-sm-6" id="info">
     <div id="name">
       <strong>Name:</strong>
       <%= @restaurant.name %>
@@ -20,9 +20,10 @@
       <strong>Category:</strong>
       <%= @restaurant.category %>
     </div>
-
-    <%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
-    <%= link_to 'Back', restaurants_path %>
+    <div id="options">
+      <%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
+      <%= link_to 'Back', restaurants_path %>
+    </div>
   </div>
   <div class="col-sm-6">
     <%= simple_form_for [@restaurant, @review] do |f| %>

@@ -63,17 +63,8 @@ td {
   padding: 20px 50px;
 }
 
-.top #info {
-  display: flex;
-  width: 500px;
-  flex-shrink: 0;
-
-
-}
-
-.top #review{
-  display: flex;
-  width: 500px;
-  flex-grow: 0;
-
+#info {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
